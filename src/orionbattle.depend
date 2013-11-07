@@ -1,0 +1,1246 @@
+# depslib dependency file v1.0
+1216513715 c:\gamelib\orionbattle\main.cpp
+	<irrlicht.h>
+	<irrString.h>
+	<irrKlang.h>
+	"orion.h"
+	"irrBoids.h"
+	<time.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"coreutil.h"
+	"irrArray.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"SColor.h"
+	"SLight.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"IAttributes.h"
+	"IAttributeExchangingObject.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IQ3LevelMesh.h"
+	"IAnimatedMeshSceneNode.h"
+	"IBillboardSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"IDummyTransformationSceneNode.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IImage.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshSceneNode.h"
+	"IMeshManipulator.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IReadFile.h"
+	"IrrlichtDevice.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneUserDataSerializer.h"
+	"ITriangleSelector.h"
+	"ISceneNodeAnimator.h"
+	"ISceneCollisionManager.h"
+	"ISceneNodeFactory.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"IShaderConstantSetCallBack.h"
+	"IParticleSystemSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"IReferenceCounted.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"irrList.h"
+	"matrix4.h"
+	"plane3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SExposedVideoData.h"
+	"SKeyMap.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SViewFrustum.h"
+	"SIrrCreationParameters.h"
+
+1196367396 c:\gamelib\irrlicht-1.4\\include\irrcompileconfig.h
+	<stdio.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrmath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrtypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\vector3d.h
+	"irrMath.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\coreutil.h
+	"irrString.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrstring.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrallocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrarray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\heapsort.h
+	"irrTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrmap.h
+	"irrTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\scolor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\slight.h
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\dimension2d.h
+	"irrTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\edrivertypes.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iattributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ireferencecounted.h
+	"irrTypes.h"
+
+1195292324 c:\gamelib\irrlicht-1.4\\include\vector2d.h
+	"irrMath.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\position2d.h
+	"irrTypes.h"
+	"dimension2d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\matrix4.h
+	"irrTypes.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ixmlreader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrxml.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iattributeexchangingobject.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ianimatedmesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\smaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ematerialtypes.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ematerialflags.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\smateriallayer.h
+	"matrix4.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ianimatedmeshmd2.h
+	"IAnimatedMesh.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ianimatedmeshmd3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iq3shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\fast_atof.h
+	<stdlib.h>
+	"irrMath.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ifilesystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"irrString.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ivideodriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\itexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"irrString.h"
+	"matrix4.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iimage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imeshbuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\s3dvertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\edriverfeatures.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iq3levelmesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ianimatedmeshscenenode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IShadowVolumeSceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenenode.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneManager.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+	"IAttributeExchangingObject.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\escenenodetypes.h
+	"irrTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ecullingtypes.h
+	"irrTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\edebugscenetypes.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenemanager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\eterrainelements.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\emeshwriterenums.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sceneparameters.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenenodeanimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\escenenodeanimatortypes.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\itriangleselector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1195907668 c:\gamelib\irrlicht-1.4\\include\irrlist.h
+	"irrTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ibonescenenode.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ishadowvolumescenenode.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ibillboardscenenode.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\icamerascenenode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ieventreceiver.h
+	"ILogger.h"
+	"position2d.h"
+	"Keycodes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ilogger.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\keycodes.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\idummytransformationscenenode.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ifilelist.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\igpuprogrammingservices.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguibutton.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguielement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"IAttributes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\eguielementtypes.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguicheckbox.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguicolorselectdialog.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguicombobox.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguicontextmenu.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguieditbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguielementfactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguienvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguiskin.h
+	"IAttributeExchangingObject.h"
+	"SColor.h"
+	"rect.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\emessageboxflags.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguifileopendialog.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguifont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguifontbitmap.h
+	"IGUIFont.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguiimage.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguiinoutfader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguilistbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguimeshviewer.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguiscrollbar.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguispinbox.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguispritebank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguistatictext.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguitabcontrol.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguitoolbar.h
+	"IGUIElement.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iguiwindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ilightscenenode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imaterialrenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imaterialrendererservices.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imeshcache.h
+	"IReferenceCounted.h"
+	"irrString.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imeshscenenode.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imeshmanipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imeshwriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\imetatriangleselector.h
+	"ITriangleSelector.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ireadfile.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\irrlichtdevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\icursorcontrol.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ivideomodelist.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\itimer.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iosoperator.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\isceneuserdataserializer.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenecollisionmanager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenenodefactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenenodeanimatorfactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iscenenodeanimatorcollisionresponse.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ishaderconstantsetcallback.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlesystemscenenode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticleanimatedmeshscenenodeemitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticleemitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sparticle.h
+	"vector3d.h"
+	"SColor.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticleboxemitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlecylinderemitter.h
+	"IParticleEmitter.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlemeshemitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticleringemitter.h
+	"IParticleEmitter.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlesphereemitter.h
+	"IParticleEmitter.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticleattractionaffector.h
+	"IParticleAffector.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticleaffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlefadeoutaffector.h
+	"IParticleAffector.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlegravityaffector.h
+	"IParticleAffector.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iparticlerotationaffector.h
+	"IParticleAffector.h"
+
+1195907668 c:\gamelib\irrlicht-1.4\\include\iskinnedmesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sskinmeshbuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iterrainscenenode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"SMeshBufferLightMap.h"
+	"irrArray.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\smeshbufferlightmap.h
+	"CMeshBuffer.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\cmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\itextscenenode.h
+	"ISceneNode.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\iwritefile.h
+	"IReferenceCounted.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\ixmlwriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sanimatedmesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sexposedvideodata.h
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\skeymap.h
+	"Keycodes.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\smesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\smeshbuffer.h
+	"CMeshBuffer.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\smeshbuffertangents.h
+	"CMeshBuffer.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sviewfrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1195292322 c:\gamelib\irrlicht-1.4\\include\sirrcreationparameters.h
+
+1199227509 c:\gamelib\orionbattle\objetos.h
+	<irrlicht.h>
+	"irrBoids.h"
+
+1196513122 c:\gamelib\irrlicht-1.4\\include\irrklang.h
+	"ik_irrKlangTypes.h"
+	"ik_vec3d.h"
+	"ik_IRefCounted.h"
+	"ik_IVirtualRefCounted.h"
+	"ik_ESoundOutputDrivers.h"
+	"ik_ESoundEngineOptions.h"
+	"ik_EStreamModes.h"
+	"ik_SAudioStreamFormat.h"
+	"ik_ISoundEngine.h"
+	"ik_ISoundSource.h"
+	"ik_ISound.h"
+	"ik_IAudioStream.h"
+	"ik_IAudioStreamLoader.h"
+	"ik_ISoundEffectControl.h"
+	"ik_ISoundStopEventReceiver.h"
+	"ik_IFileFactory.h"
+	"ik_IFileReader.h"
+	"ik_ISoundDeviceList.h"
+
+1194003508 c:\gamelib\irrlicht-1.4\\include\ik_irrklangtypes.h
+
+1193993394 c:\gamelib\irrlicht-1.4\\include\ik_vec3d.h
+	<math.h>
+	"ik_irrKlangTypes.h"
+
+1193915556 c:\gamelib\irrlicht-1.4\\include\ik_irefcounted.h
+	"ik_irrKlangTypes.h"
+
+1193915572 c:\gamelib\irrlicht-1.4\\include\ik_ivirtualrefcounted.h
+	"ik_irrKlangTypes.h"
+
+1196006922 c:\gamelib\irrlicht-1.4\\include\ik_esoundoutputdrivers.h
+
+1193600426 c:\gamelib\irrlicht-1.4\\include\ik_esoundengineoptions.h
+
+1193909910 c:\gamelib\irrlicht-1.4\\include\ik_estreammodes.h
+
+1193914678 c:\gamelib\irrlicht-1.4\\include\ik_saudiostreamformat.h
+	"ik_IRefCounted.h"
+
+1196509502 c:\gamelib\irrlicht-1.4\\include\ik_isoundengine.h
+	"ik_IRefCounted.h"
+	"ik_vec3d.h"
+	"ik_ISoundSource.h"
+	"ik_ISound.h"
+	"ik_EStreamModes.h"
+	"ik_IFileFactory.h"
+
+1196509368 c:\gamelib\irrlicht-1.4\\include\ik_isoundsource.h
+	"ik_IVirtualRefCounted.h"
+	"ik_vec3d.h"
+	"ik_EStreamModes.h"
+	"ik_SAudioStreamFormat.h"
+
+1196509262 c:\gamelib\irrlicht-1.4\\include\ik_isound.h
+	"ik_IVirtualRefCounted.h"
+	"ik_ISoundEffectControl.h"
+	"ik_vec3d.h"
+
+1193915570 c:\gamelib\irrlicht-1.4\\include\ik_isoundeffectcontrol.h
+	"ik_IVirtualRefCounted.h"
+	"ik_vec3d.h"
+
+1193915556 c:\gamelib\irrlicht-1.4\\include\ik_ifilefactory.h
+	"ik_IRefCounted.h"
+
+1193916604 c:\gamelib\irrlicht-1.4\\include\ik_iaudiostream.h
+	"ik_IRefCounted.h"
+	"ik_SAudioStreamFormat.h"
+
+1193915550 c:\gamelib\irrlicht-1.4\\include\ik_iaudiostreamloader.h
+	"ik_IRefCounted.h"
+	"ik_IFileReader.h"
+
+1193915556 c:\gamelib\irrlicht-1.4\\include\ik_ifilereader.h
+	"ik_IRefCounted.h"
+
+1195916226 c:\gamelib\irrlicht-1.4\\include\ik_isoundstopeventreceiver.h
+	"ik_IRefCounted.h"
+	"ik_SAudioStreamFormat.h"
+
+1196510908 c:\gamelib\irrlicht-1.4\\include\ik_isounddevicelist.h
+	"ik_IRefCounted.h"
+
+1196516722 c:\gamelib\irrklang-1.0.3\\include\irrklang.h
+	"ik_irrKlangTypes.h"
+	"ik_vec3d.h"
+	"ik_IRefCounted.h"
+	"ik_IVirtualRefCounted.h"
+	"ik_ESoundOutputDrivers.h"
+	"ik_ESoundEngineOptions.h"
+	"ik_EStreamModes.h"
+	"ik_SAudioStreamFormat.h"
+	"ik_ISoundEngine.h"
+	"ik_ISoundSource.h"
+	"ik_ISound.h"
+	"ik_IAudioStream.h"
+	"ik_IAudioStreamLoader.h"
+	"ik_ISoundEffectControl.h"
+	"ik_ISoundStopEventReceiver.h"
+	"ik_IFileFactory.h"
+	"ik_IFileReader.h"
+	"ik_ISoundDeviceList.h"
+
+1194007108 c:\gamelib\irrklang-1.0.3\\include\ik_irrklangtypes.h
+
+1193996994 c:\gamelib\irrklang-1.0.3\\include\ik_vec3d.h
+	<math.h>
+	"ik_irrKlangTypes.h"
+
+1193919156 c:\gamelib\irrklang-1.0.3\\include\ik_irefcounted.h
+	"ik_irrKlangTypes.h"
+
+1193919172 c:\gamelib\irrklang-1.0.3\\include\ik_ivirtualrefcounted.h
+	"ik_irrKlangTypes.h"
+
+1196010522 c:\gamelib\irrklang-1.0.3\\include\ik_esoundoutputdrivers.h
+
+1193604026 c:\gamelib\irrklang-1.0.3\\include\ik_esoundengineoptions.h
+
+1193913510 c:\gamelib\irrklang-1.0.3\\include\ik_estreammodes.h
+
+1193918278 c:\gamelib\irrklang-1.0.3\\include\ik_saudiostreamformat.h
+	"ik_IRefCounted.h"
+
+1196513102 c:\gamelib\irrklang-1.0.3\\include\ik_isoundengine.h
+	"ik_IRefCounted.h"
+	"ik_vec3d.h"
+	"ik_ISoundSource.h"
+	"ik_ISound.h"
+	"ik_EStreamModes.h"
+	"ik_IFileFactory.h"
+
+1196512968 c:\gamelib\irrklang-1.0.3\\include\ik_isoundsource.h
+	"ik_IVirtualRefCounted.h"
+	"ik_vec3d.h"
+	"ik_EStreamModes.h"
+	"ik_SAudioStreamFormat.h"
+
+1196512862 c:\gamelib\irrklang-1.0.3\\include\ik_isound.h
+	"ik_IVirtualRefCounted.h"
+	"ik_ISoundEffectControl.h"
+	"ik_vec3d.h"
+
+1193919170 c:\gamelib\irrklang-1.0.3\\include\ik_isoundeffectcontrol.h
+	"ik_IVirtualRefCounted.h"
+	"ik_vec3d.h"
+
+1193919156 c:\gamelib\irrklang-1.0.3\\include\ik_ifilefactory.h
+	"ik_IRefCounted.h"
+
+1193920204 c:\gamelib\irrklang-1.0.3\\include\ik_iaudiostream.h
+	"ik_IRefCounted.h"
+	"ik_SAudioStreamFormat.h"
+
+1193919150 c:\gamelib\irrklang-1.0.3\\include\ik_iaudiostreamloader.h
+	"ik_IRefCounted.h"
+	"ik_IFileReader.h"
+
+1193919156 c:\gamelib\irrklang-1.0.3\\include\ik_ifilereader.h
+	"ik_IRefCounted.h"
+
+1195919826 c:\gamelib\irrklang-1.0.3\\include\ik_isoundstopeventreceiver.h
+	"ik_IRefCounted.h"
+	"ik_SAudioStreamFormat.h"
+
+1196514508 c:\gamelib\irrklang-1.0.3\\include\ik_isounddevicelist.h
+	"ik_IRefCounted.h"
+
+1241893699 c:\gamelib\orionbattle\orion.h
+	<irrlicht.h>
+	<strings.h>
+	<irrKlang.h>
+	"windcontrol.h"
+	<io.h>
+
+1216514894 c:\gamelib\orionbattle\irrboids.cpp
+	<irrlicht.h>
+	"irrBoids.h"
+
+1234582292 c:\gamelib\orionbattle\irrboids.h
+	<irrlicht.h>
+
+1199585504 c:\gamelib\opensteer\include\opensteer\polylinesegmentedpathwaysingleradius.h
+	"SegmentedPathway.h"
+	"PolylineSegmentedPath.h"
+	"QueryPathAlikeBaseDataExtractionPolicies.h"
+	"Vec3.h"
+	"Vec3Utilities.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\segmentedpathway.h
+	"Pathway.h"
+	"StandardTypes.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\pathway.h
+
+1199585504 c:\gamelib\opensteer\include\opensteer\standardtypes.h
+	<cstddef>
+
+1199585504 c:\gamelib\opensteer\include\opensteer\polylinesegmentedpath.h
+	<vector>
+	"SegmentedPath.h"
+	"QueryPathAlikeBaseDataExtractionPolicies.h"
+	"Vec3.h"
+	"Vec3Utilities.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\segmentedpath.h
+	"Path.h"
+	"StandardTypes.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\path.h
+
+1199585504 c:\gamelib\opensteer\include\opensteer\querypathalikebasedataextractionpolicies.h
+
+1199585504 c:\gamelib\opensteer\include\opensteer\vec3.h
+	"Utilities.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\utilities.h
+	<iostream>
+	<cstdlib>
+	<cfloat>
+	<cmath>
+	<vector>
+	<cassert>
+	<limits>
+
+1199585504 c:\gamelib\opensteer\include\opensteer\vec3utilities.h
+	"Vec3.h"
+	"StandardTypes.h"
+	"Utilities.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\abstractvehicle.h
+	"LocalSpace.h"
+	<vector>
+
+1199585504 c:\gamelib\opensteer\include\opensteer\localspace.h
+	"Vec3.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\steerlibrary.h
+	"AbstractVehicle.h"
+	"Pathway.h"
+	"Obstacle.h"
+	"Utilities.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\obstacle.h
+	"Vec3.h"
+	"LocalSpace.h"
+	"AbstractVehicle.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\proximity.h
+	<algorithm>
+	<vector>
+	"Vec3.h"
+	"lq.h"
+
+1199585504 c:\gamelib\opensteer\include\opensteer\lq.h
+
+1199640863 c:\gamelib\orionbattle\gmodel.h
+	"GObject.h"
+
+1199585506 c:\gamelib\orionbattle\gobject.h
+	"core/doste.h"
+	"core/Trigger.h"
+
+1199585485 c:\gamelib\opensteer\include\core\doste.h
+	"OID.h"
+	"Definition.h"
+	"Object.h"
+
+1199585485 c:\gamelib\opensteer\include\core\oid.h
+	<iostream>
+	<list>
+
+1199585485 c:\gamelib\opensteer\include\core\definition.h
+	"OID.h"
+	"Trigger.h"
+	<iostream>
+
+1199585485 c:\gamelib\opensteer\include\core\trigger.h
+	"OID.h"
+	<iostream>
+
+1199585485 c:\gamelib\opensteer\include\core\object.h
+	"OID.h"
+	"Definition.h"
+	"Trigger.h"
+	<list>
+
+1199585505 c:\gamelib\orionbattle\gobject.cpp
+	"GObject.h"
+
+1199641596 c:\gamelib\orionbattle\gunit.cpp
+	"GUnit.h"
+
+1199585506 c:\gamelib\orionbattle\gunit.h
+	<list>
+	"core/doste.h"
+	"GModel.h"
+	"OpenSteer/PolylineSegmentedPathwaySingleRadius.h"
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/SteerLibrary.h"
+	"OpenSteer/Proximity.h"
+
+1063674712 c:\gamelib\orionbattle\rigidbody2d.h
+	"mymath.h"
+
+1199755261 c:\gamelib\orionbattle\mymath.h
+	<math.h>
+
+1054493076 c:\gamelib\orionbattle\rigidbody2d.cpp
+	"RigidBody2D.h"
+
+1199584680 c:\cvs\trunk\include\opensteer\simplevehicle.h
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/SteerLibrary.h"
+	"OpenSteer/Annotation.h"
+
+1199553186 c:\cvs\trunk\include\opensteer\abstractvehicle.h
+	"OpenSteer/LocalSpace.h"
+	<vector>
+
+1199553186 c:\cvs\trunk\include\opensteer\localspace.h
+	"OpenSteer/Vec3.h"
+
+1199553186 c:\cvs\trunk\include\opensteer\vec3.h
+	"OpenSteer/Utilities.h"
+
+1199581418 c:\cvs\trunk\include\opensteer\utilities.h
+	<iostream>
+	<cstdlib>
+	<cfloat>
+	<cmath>
+	<vector>
+	<cassert>
+	<limits>
+
+1199553186 c:\cvs\trunk\include\opensteer\steerlibrary.h
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/Pathway.h"
+	"OpenSteer/Obstacle.h"
+	"OpenSteer/Utilities.h"
+	"Color.h"
+
+1199553186 c:\cvs\trunk\include\opensteer\pathway.h
+
+1199553186 c:\cvs\trunk\include\opensteer\obstacle.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/LocalSpace.h"
+	"OpenSteer/AbstractVehicle.h"
+
+1199553186 c:\cvs\trunk\include\opensteer\color.h
+
+1199584366 c:\cvs\trunk\include\opensteer\annotation.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Color.h"
+
+1199553186 c:\cvs\trunk\include\opensteer\opensteerdemo.h
+	"OpenSteer/Clock.h"
+	"OpenSteer/PlugIn.h"
+	"OpenSteer/Camera.h"
+	"OpenSteer/Utilities.h"
+	"OpenSteer/Draw.h"
+
+1199553186 c:\cvs\trunk\include\opensteer\clock.h
+	"OpenSteer/Utilities.h"
+	<xtl.h>
+	<windows.h>
+
+1199553186 c:\cvs\trunk\include\opensteer\plugin.h
+	<iostream>
+	"OpenSteer/AbstractVehicle.h"
+
+1199751217 c:\cvs\trunk\include\opensteer\camera.h
+	"OpenSteer/LocalSpace.h"
+	"OpenSteer/AbstractVehicle.h"
+
+1199751217 c:\cvs\trunk\include\opensteer\draw.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/Obstacle.h"
+
+1199996548 c:\cvs\trunk\\include\opensteer\simplevehicle.h
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/SteerLibrary.h"
+
+1199553186 c:\cvs\trunk\\include\opensteer\abstractvehicle.h
+	"OpenSteer/LocalSpace.h"
+	<vector>
+
+1199553186 c:\cvs\trunk\\include\opensteer\localspace.h
+	"OpenSteer/Vec3.h"
+
+1199553186 c:\cvs\trunk\\include\opensteer\vec3.h
+	"OpenSteer/Utilities.h"
+
+1199581418 c:\cvs\trunk\\include\opensteer\utilities.h
+	<iostream>
+	<cstdlib>
+	<cfloat>
+	<cmath>
+	<vector>
+	<cassert>
+	<limits>
+
+1199553186 c:\cvs\trunk\\include\opensteer\steerlibrary.h
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/Pathway.h"
+	"OpenSteer/Obstacle.h"
+	"OpenSteer/Utilities.h"
+	"Color.h"
+
+1199553186 c:\cvs\trunk\\include\opensteer\pathway.h
+
+1199553186 c:\cvs\trunk\\include\opensteer\obstacle.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/LocalSpace.h"
+	"OpenSteer/AbstractVehicle.h"
+
+1199553186 c:\cvs\trunk\\include\opensteer\color.h
+
+1199584366 c:\cvs\trunk\\include\opensteer\annotation.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Color.h"
+
+1199553186 c:\cvs\trunk\\include\opensteer\opensteerdemo.h
+	"OpenSteer/Clock.h"
+	"OpenSteer/PlugIn.h"
+	"OpenSteer/Camera.h"
+	"OpenSteer/Utilities.h"
+	"OpenSteer/Draw.h"
+
+1199553186 c:\cvs\trunk\\include\opensteer\clock.h
+	"OpenSteer/Utilities.h"
+	<xtl.h>
+	<windows.h>
+
+1199553186 c:\cvs\trunk\\include\opensteer\plugin.h
+	<iostream>
+	"OpenSteer/AbstractVehicle.h"
+
+1199751217 c:\cvs\trunk\\include\opensteer\camera.h
+	"OpenSteer/LocalSpace.h"
+	"OpenSteer/AbstractVehicle.h"
+
+1199751217 c:\cvs\trunk\\include\opensteer\draw.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/Obstacle.h"
+
+1256492043 source:c:\gamelib\orionbattle\main.cpp
+	<irrlicht.h>
+	<irrString.h>
+	<irrKlang.h>
+	"orion.h"
+	"irrBoids.h"
+	<time.h>
+
+1242696550 source:c:\gamelib\orionbattle\irrboids.cpp
+	<irrlicht.h>
+	"irrBoids.h"
+
+1225365514 c:\gamelib\orionbattle\postprocessradialblur.h
+	"irrlicht.h"
+
+1241894493 c:\gamelib\orionbattle\windcontrol.h
+	<windows.h>
+

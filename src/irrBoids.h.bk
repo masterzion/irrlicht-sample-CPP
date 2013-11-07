@@ -1,0 +1,76 @@
+/**
+ * IRRBOID.H
+ * Boid.H
+GLBoids based by:
+Tom Bak
+Thong Chau
+**/
+
+#include <irrlicht.h>
+using namespace irr;
+
+#ifndef IRRBOID__H
+#define IRRBOID__H
+
+
+
+
+
+//********************************************************************
+class Boid
+{
+public:
+    int MAX_TURN_SPEED;
+    int MAX_VERTICAL_ANGLE;		// How much up/down can it fly
+
+float	mappoint_x;
+float	mappoint_y;
+float	mappoint_z;
+
+
+    float x, y, z;		// Position (0-1)
+	float velocity;		// How fast is it going? (0-1)
+    int theta_y;		// Angle (rotated around y axis) (0-259)
+	int theta_x;		// Angle (rotated around x axis) (0-259)
+
+
+
+	float new_turning_y;		// How much more should the boid turn in one direction this round???
+	float curr_turning_y;		// How much is the boid currently turning in one direction???
+
+	float curr_turning_x;		// The same, but for going up/down
+	float new_turning_x;
+
+	float curr_turning_z;		// The same, but for going up/down
+	float new_turning_z;
+
+	float goal_y;		// How high does the boid want to go?
+    scene::IAnimatedMeshSceneNode * MeshNode;
+
+public:
+	Boid();
+	void ApplyBoidRules( int b );
+	void Move();
+	void TurnTowardsY(int theta, float amount);
+	void SincronizaVar();
+};
+//********************************************************************
+class Universo
+{
+public:
+    Universo( scene::IAnimatedMeshSceneNode * meuinimigo ,scene::IAnimatedMeshSceneNode * meuinimigo2  );
+
+int     NUM_BOIDS;
+
+
+	~Universo();
+    Boid *boids;		// Array of boids
+	void ApplyBoidRules( int b );
+	int CalculateInverseTan( double delta_x, double delta_z );
+    void AtualizaUniverso();
+
+
+};
+
+#endif
+

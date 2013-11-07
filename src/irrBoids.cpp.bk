@@ -1,0 +1,344 @@
+/**
+ * IRRBOID.H
+ * Boid.H
+GLBoids based by:
+Tom Bak
+Thong Chau
+**/
+#include <irrlicht.h>
+#include "irrBoids.h"
+
+double cos_lookup[360];
+double sin_lookup[360];
+
+
+
+Universo::Universo( scene::IAnimatedMeshSceneNode * meuinimigo ,scene::IAnimatedMeshSceneNode * meuinimigo2  )
+{
+  NUM_BOIDS = 2;
+  boids = new Boid[NUM_BOIDS];
+
+	for( int i = 0; i < NUM_BOIDS; i++ ) {
+	    printf("criando %d \n", i);
+		// init boid positions
+		if ( i == 0 ) {
+		        boids[i].MeshNode = meuinimigo;
+		}
+		if ( i == 1 )   {
+		      boids[i].MeshNode = meuinimigo2;
+		}
+
+         boids[i].SincronizaVar();
+
+		// Initially it doesn't want to go up/down
+		boids[i].goal_y = boids[i].y;
+
+		boids[i].theta_y = 0;
+		boids[i].theta_x = 0;
+		boids[i].velocity = 1.0f;
+
+	// Where should the boids fly to?
+	boids[i].mappoint_x = rand() % 1000;
+	boids[i].mappoint_y = rand() % 40 + 10;
+	boids[i].mappoint_z = rand() % 1000;
+
+
+
+
+	}
+
+
+
+
+
+}
+
+
+
+
+/**
+ * Given a x and y vector, calculate the angle formed by them
+**/
+int Universo::CalculateInverseTan( double delta_x, double delta_z )
+{
+	float theta;
+
+	if( delta_x > 0 ) {
+		if( delta_z >= 0 ) {
+			theta = atan( delta_z / delta_x );
+			theta*= 180;
+			theta/= 3.1415;
+			theta = 90 - theta;
+		}
+		else {
+			theta = atan( -delta_z / delta_x );
+			theta*= 180;
+			theta/= 3.1415;
+			theta = 90 + theta;
+		}
+	}
+	else if( delta_x < 0 ) {
+		if( delta_z >= 0 ) {
+			theta = atan( delta_z / -delta_x );
+			theta*= 180;
+			theta/= 3.1415;
+			theta = 270 + theta;
+		}
+		else {
+			theta = atan( -delta_z / -delta_x );
+			theta*= 180;
+			theta/= 3.1415;
+			theta = 270 - theta;
+		}
+	}
+	else {
+		// Divide by zero check
+		if( delta_z >= 0 ) {
+			theta = 0;
+		}
+		else {
+			theta = 180;
+		}
+	}
+
+	// Round up/down... Todo: Is there REALLY no function for this???
+	if( theta - (int)theta > 0.5 )
+		return (int)theta + 1;
+	else
+		return (int)theta;
+
+}
+
+/**
+ * Steer towards the center of mass
+ * OTher rules too...
+ * @param b The boid number to apply the rules to
+**/
+void Universo::ApplyBoidRules( int b )
+{
+	float cz=0, cy=0, cx=0;  // Center of mass of nearby boids
+
+	double crx=0;  // Average direction vector in the x direction
+	double crz=0;	// Average direction vector in the y direction
+
+	// Locate center of all boids
+	for( int i = 0; i < NUM_BOIDS; i++ ) {
+		// Todo: Only for nearby boids!!!
+		boids[i].SincronizaVar();
+
+
+		cx += boids[i].x;
+		cy += boids[i].y;
+		cz += boids[i].z;
+
+		crx += boids[i].velocity * sin_lookup[ boids[i].theta_y ];
+		crz += boids[i].velocity * cos_lookup[ boids[i].theta_y ];
+	}
+	cx /= NUM_BOIDS;
+	cy /= NUM_BOIDS;
+	cz /= NUM_BOIDS;
+
+	crz /= NUM_BOIDS;
+	crx /= NUM_BOIDS;
+
+
+	// Cohesion
+	// Todo: Avoidance!!!
+
+	float delta_z, delta_x;
+	int com_theta;  // Center of mass theta direction for this boid
+
+	delta_x = cx - boids[b].x;
+	delta_z = cz - boids[b].z;
+
+	boids[b].new_turning_y = 0;
+	boids[b].new_turning_x = 0;
+
+	// **** CALCULATE THE CENTER OF MASS THETA
+	com_theta = CalculateInverseTan( delta_x, delta_z );
+
+
+
+	// **** CALCULATE THE ALIGNMENT THETA
+	int align_theta;
+	align_theta = CalculateInverseTan( crx, crz );
+
+	//printf("Crz:%f    Crx:%f  Align:%d\n", crz, crx, align_theta);
+
+	//printf("dx:%f, dz:%f, curr theta:%d, com_theta:%d\n", delta_x, delta_z, boids[b].theta_y, com_theta );
+
+	// Do cohesion turns
+	boids[b].TurnTowardsY( com_theta, .15 );  //.3
+
+	// Do alignment turns
+	boids[b].TurnTowardsY( align_theta, .1 );
+
+	// Apply a straightening force to nudge them into flying straight
+	if( boids[b].curr_turning_y > 0 )
+		boids[b].new_turning_y -= .05;
+	else if( boids[b].curr_turning_y < 0 )
+		boids[b].new_turning_y += .05;
+
+	// Try to convince the birds to move towards a pre-picked destination
+	float foo_x, foo_z;
+	foo_x = boids[b].mappoint_x - boids[b].x;
+	foo_z = boids[b].mappoint_z - boids[b].z;
+	int mappoint_theta = CalculateInverseTan( foo_x, foo_z );
+	boids[b].TurnTowardsY( mappoint_theta, .05 );
+
+
+	// Now randomly choose to have this bird go up/down
+	if( rand() % 100 == 42 ) {
+		//boids[b].goal_y = (float)(rand() % 60) / (float)100 + 0.45;
+		boids[b].goal_y = rand() % 10 + 40;
+	}
+
+	// Figure out which direction the boids should be flying (up/down)
+	if( boids[b].y > boids[b].goal_y + 1.0f )
+		boids[b].new_turning_x -= 0.1;
+	else if( boids[b].y < boids[b].goal_y )
+		boids[b].new_turning_x += 0.1;
+	else if( boids[b].y < 10 * 3 )
+		boids[b].new_turning_x += 0.5;
+	else if( boids[b].y > 10 * 10 )
+		boids[b].new_turning_x -= 0.5;
+	else if( boids[b].curr_turning_x > 0 )
+		boids[b].new_turning_x -= 0.1;
+	else if( boids[b].curr_turning_x < 0 )
+		boids[b].new_turning_x += 0.1;
+
+	// Avoid mountains!!!
+	//if( boids[b].y - 5.0f < terrain->heights[(int)boids[b].x / 20][(int)boids[b].y / 20] ) boids[b].new_turning_x += 0.5f;
+	boids[b].new_turning_x += 0.5f;
+
+}
+
+
+/**
+ * Move stuff in the world
+ * This should happen at uniform time periods, regardless of FPS speed!
+**/
+void Universo::AtualizaUniverso()
+{
+
+	// Turn, then move, the birds
+	for( int j = 0; j < NUM_BOIDS; j++ ) {
+		// Mappoint check
+		if( (int)boids[j].x == boids[j].mappoint_x && (int)boids[j].z == boids[j].mappoint_z ) {
+			boids[j].mappoint_x = rand() % 800 + 100;
+			boids[j].mappoint_z = rand() % 800 + 100;
+
+			boids[j].SincronizaVar();
+		}
+
+		// Figure out where this bird wants to go
+		ApplyBoidRules( j );
+		boids[j].Move();
+	}
+
+
+
+
+}
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+Boid::Boid()
+{
+  curr_turning_x = 0;
+  curr_turning_y = 0;
+  curr_turning_z = 0;
+
+MAX_TURN_SPEED = 3;
+MAX_VERTICAL_ANGLE = 30;
+
+}
+
+void Boid::SincronizaVar() {
+       //printf("sincronizando (%d,%d) -> (%d, %d) \n", x,y, MeshNode->getPosition().X, MeshNode->getPosition().Y );
+	    x = MeshNode->getPosition().X;
+	    y = MeshNode->getPosition().Y;
+     	z = MeshNode->getPosition().Z;
+
+       printf(" (%d,%d) =====> (%d,%d) \n", x,y ,mappoint_x,mappoint_y);
+
+
+}
+
+
+void Boid::Move()
+{
+	// Todo: Fix this a little bit
+
+    // ***** Calculo com Y *****
+	// Add to amount boid is currently turning
+	curr_turning_y += new_turning_y;
+	new_turning_y= 0;
+
+	// Make sure boid doesn't turn TOO much!
+	if( curr_turning_y > MAX_TURN_SPEED )
+		curr_turning_y = MAX_TURN_SPEED;
+	else if( curr_turning_y < -MAX_TURN_SPEED )
+		curr_turning_y = -MAX_TURN_SPEED;
+	// Apply turn amount that has been calculated to actual bird theta...
+	theta_y += (int)curr_turning_y + 360;
+	theta_y %= 360;
+
+
+    // ***** Calculo com X  *****
+	curr_turning_x += new_turning_x;
+	new_turning_x = 0;
+
+	// Make sure boid doesn't turn TOO much!
+	if( curr_turning_x > MAX_VERTICAL_ANGLE )
+		curr_turning_x = MAX_VERTICAL_ANGLE;
+	else if( curr_turning_x < -MAX_VERTICAL_ANGLE )
+		curr_turning_x = -MAX_VERTICAL_ANGLE;
+
+	// Now actually turn the darn thing!
+	theta_x = (int)curr_turning_x + 360;
+	theta_x %= 360;
+
+	//*******************
+
+	// Make 15 degree x-rot limits for boid... So it doesn't fly straight up, in loops, etc
+	if( (theta_x > MAX_VERTICAL_ANGLE) && (theta_x < 180-MAX_VERTICAL_ANGLE) )
+		theta_x = MAX_VERTICAL_ANGLE;
+	else if( (theta_x < 360 - MAX_VERTICAL_ANGLE) && (theta_x >= 180-MAX_VERTICAL_ANGLE) )
+		theta_x = 360-MAX_VERTICAL_ANGLE;
+
+	z += cos_lookup[theta_y] * velocity;
+	y += sin_lookup[theta_x] * velocity;
+	x += sin_lookup[theta_y] * velocity;
+	MeshNode->setPosition(core::vector3df(x,y,z) );
+
+
+}
+
+
+/**
+ * Turn this boid towards the desired theta
+ * @amount The amount of degrees it can turn
+**/
+void Boid::TurnTowardsY( int desired_theta, float amount )
+{
+	// Weird checks because of 360-0 discontinuity
+	if( desired_theta > theta_y ) {
+		if( theta_y + 180 < desired_theta )
+			new_turning_y-= amount;
+		else
+			new_turning_y+= amount;
+	}
+	else if( desired_theta < theta_y ) {
+		if( theta_y - 180 < desired_theta )
+			new_turning_y-= amount;
+		else
+			new_turning_y+= amount;
+	}
+	else {
+		// Do nothing... We're already there!
+	}
+
+}
